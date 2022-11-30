@@ -1,0 +1,57 @@
+
+number_list = [1, 2, 3, 4, 6.8]
+print(number_list)
+some_list = [1, 34.545, 'jopa']
+print(some_list)
+# может содержать элементы любого типа
+print(len(some_list))  # длина списка
+print(some_list[1])
+another_list = some_list[:2]
+print(another_list)
+
+
+some_list[2] = 'pisya'  # изменение элемента внутри списка
+print(some_list)
+# Concatenation
+new_list = another_list + some_list
+print(new_list)
+# Adding items in List
+
+new_list.append('jir')  # Добавление новго элемента в конец списка
+new_list.insert(0, 'new item')  # Сначала индекс элемента, затем его значение
+new_list.insert(2, 13)
+
+# Removing items
+# new_list.pop(-1)
+# new_list.pop(0)
+# new_list.pop(-1)
+deleted_item = new_list.pop()
+deleted_item = new_list.pop(-1)
+deleted_item = new_list.remove(1)  # удаляет по значению
+print()
+print(deleted_item)
+
+print(new_list)
+
+number_list1 = [34, 566.4, 343, -3454]
+letter_list = ['s', 'f', 'g', 'n', 'a']
+
+number_list1.sort()  # сортирует список по созрастанию
+letter_list.sort()
+
+number_list1.reverse()  # сортировка в обратном порядке по убыванию
+letter_list.reverse()
+
+number_list1.append(letter_list)
+print(number_list1)
+print(letter_list)
+
+
+list_of_items = [1, 4, 'dog', -45, 'some text', 'v']
+del list_of_items[0:3]
+x = list_of_items
+print(x)
+
+print(x)
+
+
